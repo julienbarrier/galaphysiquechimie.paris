@@ -12371,7 +12371,7 @@ main[data-page|=components-usage] [data-insert-component="ImageGrid"] .image-gri
     background-color: white}
     @media all and (max-width: 930px) {
       .section--sponsors {
-        height: 600px;
+        height: 700px;
         padding-top: 0;
         background-size: 0; } }
 
