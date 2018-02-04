@@ -1,0 +1,48 @@
+main[data-page="getting-started-design-approval-service-providers"] {
+  .bx--checkbox-wrapper {
+    max-width: 38rem;
+  }
+
+  .bx--checkbox-label {
+    top: -5px;
+    line-height: 1.75;
+  }
+
+  .bx--checkbox-label::before {
+    top: 3px;
+  }
+}
+
+main[data-page="getting-started-service-icon-service-providers"] {
+  .example-img {
+    max-width: rem(290px);
+  }
+
+  .example-caption {
+    padding-bottom: .5rem;
+  }
+
+  .do-and-dont .example:first-child .example-img {
+    border-top: 2px solid #5CA51D;
+  }
+
+  .do-and-dont .example:last-child .example-img {
+    border-top: 2px solid #E52238;
+  }
+
+  .do-and-dont {
+    margin-bottom: 6rem;
+  }
+
+  .do-and-dont .example {
+    max-width: 290px;
+    min-width: 290px;
+    margin-right: 20px;
+    margin-top: 1rem;
+  }
+
+  h3#icon-requirements + p,
+  div[data-insert-component] + p {
+    padding-bottom: 0 !important;
+  }
+}
