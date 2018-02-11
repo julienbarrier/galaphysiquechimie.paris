@@ -12090,12 +12090,22 @@ main[data-page|=components-usage] [data-insert-component="ImageGrid"] .image-gri
     perspective: 100px;
     transition: background-size 600ms ease;
 }
+@media all and (max-width: 500px) {
+    .sep1 {
+        height: 400px;
+    }
+}
 @media all and (max-width: 930px) {
     .sep1 {
-    height=200px   } }
+    height:200px   } }
   @media all and (max-width: 2000px) {
     .sep1 {
        } }
+@media all and (max-width: 310px) {
+    .sep1 {
+        height:350px;
+    }
+}
 
 .sep2 {
     width:100%;
@@ -12124,7 +12134,7 @@ main[data-page|=components-usage] [data-insert-component="ImageGrid"] .image-gri
 }
 @media all and (max-width: 930px) {
     .sep2 {
-    height=300px   } }
+    height:300px   } }
 
 .sep3 {
     width:100%;
@@ -12153,7 +12163,7 @@ main[data-page|=components-usage] [data-insert-component="ImageGrid"] .image-gri
 }
 @media all and (max-width: 930px) {
     .sep2 {
-    height=500px   } }
+    height:500px;   } }
 
 .sep4 {
     width:100%;
@@ -12188,7 +12198,7 @@ main[data-page|=components-usage] [data-insert-component="ImageGrid"] .image-gri
 
 @media all and (max-width: 930px) {
     .sep4 {
-    height=200px;
+    height:200px;
     background-size: 200%;
     background-position: 50% 50%;
     } }
@@ -12220,7 +12230,7 @@ main[data-page|=components-usage] [data-insert-component="ImageGrid"] .image-gri
 }
 @media all and (max-width: 930px) {
     .sep5 {
-    height=200px   } }
+    height:200px   } }
   @media all and (max-width: 2000px) {
     .sep5 {
       background-size: 200%;
@@ -12397,7 +12407,13 @@ main[data-page|=components-usage] [data-insert-component="ImageGrid"] .image-gri
 
 @media all and (max-width:350px) {
     .section--centans {
-        height:900px;
+        height:950px;
+    }
+}
+
+@media all and (max-width:300px) {
+    .section--centans{
+        height:1050px;
     }
 }
 
@@ -12724,7 +12740,13 @@ main[data-page|=components-usage] [data-insert-component="ImageGrid"] .image-gri
 
 @media all and (max-width:350px) {
     .sep div h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+    .showcase h2 {
+        font-size: 1.2rem;
+    }
+    .showcase p {
+        font-size: .8rem;
     }
 }
 
