@@ -442,30 +442,29 @@ button.btn .btn__icon {
 }
 
 .banner{
-  width: 100%;
-  height: 100vh;
-  background-color: #001e62;
+    width: 100%;
+    height: 100vh;
+    background-color: #001e62;
     background-image : url("images/mosaique1.jpg");
     background-size: cover;
     background-position: top center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  overflow: hidden;
-  -webkit-perspective: 100px;
-          perspective: 100px;
-  transition: background-size 600ms ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    -webkit-perspective: 100px;
+    perspective: 100px;
+    transition: background-size 600ms ease;
 }
 @media all and (max-width: 930px) {
     .banner {
@@ -483,9 +482,6 @@ button.btn .btn__icon {
     -moz-osx-font-smoothing: grayscale;
     font-size: 3.375rem;
     color: white;
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 1px;
     display: block;
     z-index: 2;
     position: absolute;
@@ -493,7 +489,9 @@ button.btn .btn__icon {
     left: auto;
     right: auto;
     height: 2.8em;
-    width: auto;}
+    width: auto;
+    display: inline-block;
+}
 @media all and (max-width:930px) {
     .banner-logo {
         font-size:2.4rem;
@@ -576,6 +574,7 @@ button.btn .btn__icon {
 
 .showcase p {
     text-align:center;
+    display: inline-block;
 }
 
 .showcase h2 {
@@ -602,6 +601,7 @@ button.btn .btn__icon {
 .separator{
 	position: relative;
 	height:auto;
+    z-index: 1;
 }
 
 .insert{
@@ -651,7 +651,7 @@ article h2{
 	text-align:center;
 }
 
-article aside{
+article h3{
     text-align: justify;
     -moz-text-align-last: center;
     -webkit-text-align-last: center;
@@ -660,6 +660,42 @@ article aside{
     font-weight: 700;
     font-style: italic;
 	margin:1rem;
+}
+
+.prestige h3::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 30rem;
+    margin: 2rem 0;
+    background-image : url('./images/hug.jpg'); 
+    background-size: cover;
+    background-position: top right;
+}
+
+.emotion h3::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 30rem;
+    margin: 2rem 0;
+    background-image : url('./images/sof.jpg'); 
+    background-size: cover;
+    background-position: top center;
+}
+
+@media all and (max-width: 930px) {
+    .prestige h3::after,
+    .emotion h3:: after {
+        height: 20rem;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .prestige h3::after,
+    .emotion h3::after {
+        height: 15rem;
+    }
 }
 
 .prestige h3, .prestige h4{
@@ -750,24 +786,19 @@ article p{
 	background-image: url("./images/lau.jpg");
 }
 
-.quote{
-	position: relative;
-	width:100%;
-	height:50vh;
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-.quote div{
+.quote {
+    display: block;
 	background: white;
     width: 70%;
 	max-width:50rem;
 	position:relative;
 	top: 50%;
     transform: translateY(-50%);
+    z-index : 2;
+    padding: .5rem 1rem;
 }
 
-.quote div h1{
+.quote h1{
 	font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 900;
@@ -783,14 +814,18 @@ article p{
 }
 
 @media screen and (max-width: 1000px), screen and (max-height: 500px){
-	.quote div h1{
+	.quote h1{
 		font-size: calc(3vw + 3vh);
 	}
 	
 }
 
 .sep3{
-	background:#1c2445;
+	width:100%;
+	height:50vh;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-color:#1c2445;
 	background-image: url("./images/reseau.svg");
 	background-size:cover;
     color: #b31a38;
@@ -805,7 +840,11 @@ article p{
 }
 
 .sep4{
-	background:#001e62;
+    width: 100%;
+    height:50vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+	background-color:#001e62;
 	background-image: url("./images/fleurs.svg");
 	background-size:cover;
     color: #b31a38;
