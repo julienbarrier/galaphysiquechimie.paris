@@ -152,7 +152,7 @@ img{
 	background-color: #001e62;
 	color:white;
 	text-align:center;
-	background-image:url("mosaique1.jpg");
+	background-image:url("./images/mosaique1.jpg");
 	background-size: calc(150vh + 150vw);
 	background-blend-mode: unset;
 	background-position: center;
@@ -311,11 +311,11 @@ img{
 }
 
 .sep1{
-	background-image: url("ecole.jpg");
+	background-image: url("./images/ecole.jpg");
 }
 
 .sep2{
-	background-image: url("bibli1.jpg");
+	background-image: url("./images/bibli1.jpg");
 	background-position: 0% 30%;
 }
 
@@ -420,15 +420,15 @@ article p{
 }
 
 .th1{
-	background-image: url("ant.jpg");
+	background-image: url("./images/ant.jpg");
 }
 
 .th2{
-	background-image: url("jul.jpg");
+	background-image: url("./images/jul.jpg");
 }
 
 .th3{
-	background-image: url("lau.jpg");
+	background-image: url("./images/lau.jpg");
 }
 
 .quote{
@@ -472,22 +472,22 @@ article p{
 
 .sep3{
 	background:#1c2445;
-	background-image: url("reseau.svg");
+	background-image: url("./images/reseau.svg");
 	background-size:cover;
     color: #b31a38;
 }
 
 .th4{
-	background-image: url("isa.jpg");
+	background-image: url("./images/isa.jpg");
 }
 
 .th5{
-	background-image: url("fra.jpg");
+	background-image: url("./images/fra.jpg");
 }
 
 .sep4{
 	background:#001e62;
-	background-image: url("fleurs.svg");
+	background-image: url("./images/fleurs.svg");
 	background-size:cover;
     color: #b31a38;
 }
@@ -534,7 +534,7 @@ a{
 
 .sep5{
 	height:50vh;
-	background-image: url("observatoire.jpg");
+	background-image: url("./images/observatoire.jpg");
 	background-size:cover;
 	background-position: 0% 45%;
 }
