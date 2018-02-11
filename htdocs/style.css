@@ -12821,14 +12821,20 @@ main[data-page|=components-usage] [data-insert-component="ImageGrid"] .image-gri
   .section--centans p a:hover {
     color: #b31a38; }
 
-@media all and (max-width)
-
-
 .sponsors__bg {
   position: absolute;
   top: 4rem;
   left: 4rem;
   z-index: 1; }
+
+.sponsors__info {
+    text-align:center;
+}
+
+.sponsors__cta-btn {
+  position:relative;
+  bottom: 4rem;
+  z-index: 2; }
 
 .glossary-entry .glossary-entry__main-heading {
   margin: 3.25rem 0 0.5rem;
@@ -13248,7 +13254,7 @@ main[data-page="getting-started-service-icon-service-providers"] div[data-insert
     margin: 2rem 0;
     background-image : url('./images/ant.jpg'); 
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center;
 }
 
 .elegance {
@@ -13264,7 +13270,7 @@ main[data-page="getting-started-service-icon-service-providers"] div[data-insert
     margin: 2rem 0;
     background-image : url('./images/jul.jpg'); 
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center;
 }
 
 .excellence {
@@ -13280,7 +13286,7 @@ main[data-page="getting-started-service-icon-service-providers"] div[data-insert
     margin: 2rem 0;
     background-image : url('./images/lau.jpg'); 
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center;
 }
 
 .sentiments {
@@ -13295,7 +13301,7 @@ main[data-page="getting-started-service-icon-service-providers"] div[data-insert
     margin: 2rem 0;
     background-image : url('./images/isa.jpg'); 
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center;
 }
 
 .audace {
@@ -13311,7 +13317,7 @@ main[data-page="getting-started-service-icon-service-providers"] div[data-insert
     margin: 2rem 0;
     background-image : url('./images/fra.jpg'); 
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: center;
 }
 
 .rencontres .list-item__info p, .emotions .list-item__info p {
@@ -13319,6 +13325,14 @@ main[data-page="getting-started-service-icon-service-providers"] div[data-insert
     text-align: justify;
     text-justify: auto;
     margin: .2rem;
+}
+
+@media screen and (max-width: 1080px) {
+	.inline div{
+		width: calc(100% - 2rem);
+		max-width:50rem;
+		margin: 1rem auto 1rem auto;
+	}
 }
 
 .section aside img {
@@ -13335,6 +13349,13 @@ main[data-page="getting-started-service-icon-service-providers"] div[data-insert
     margin: auto;
     width: 80%;
     font-weight: 300;
+}
+
+@media all and (min-width:930px) {
+    .alumni {
+        position:relative;
+        right:2rem;
+    }
 }
 
 #map {
