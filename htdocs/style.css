@@ -383,29 +383,29 @@ button.btn .btn__icon {
 
 .btn-mobile{
 	margin-top:1rem;
-	display:none;
+	display:none!important;
 }
 
 .btn-desktop{
 	margin-bottom:1.5rem;
-	display:inherit;
+	display:table-row!important;
 }
 
 @media all and (max-width: 700px) {
     .btn-mobile {
-		display:inherit;
+		display:table-row!important;
     }
 	.btn-desktop {
-		display:none;
+		display:none!important;
 	}
 }
 
 @media all and (mix-width: 700px) {
     .btn-mobile {
-		display:none;
+		display:none!important;
     }
 	.btn-desktop {
-		display:inherit;
+		display:inherit!important;
 	}
 }
 
